@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="text-with-line">
+      <span>YAY! It’s BOGO</span>
+    </div>
+
+    <!-- 1 Unit Option -->
+    <div class="offer-box" onclick="toggleOptions('one-unit')">
+      <div class="top-div">
+        <div>
+          <input type="radio" name="offer" id="one-unit" class="changeColor">
+          <label for="one-unit" class="unit">1 Unit</label>
+          <span class="badge">10% Off</span>
+          <p class="price">Standard Price</p>
+        </div>
+        <div>
+          <span class="unit">$10.00 USD</span>
+          <p class="strike-money"><s>$24.00 USD</s></p>
+        </div>
+      </div>
+      <div id="one-unit-options" class="size-color-options">
+        <div class="select-div">
+          <p>#1</p>
+          <div class="inner-select">
+            <label for="size">Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="inner-select">
+            <label for="color">Color</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-div">
+          <p>#2</p>
+          <div class="inner-select">
+            <label for="size">Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="inner-select">
+            <label for="color">Color</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 Unit Option -->
+  
+    <div class="offer-box second_box" onclick="toggleOptions('two-unit')">
+      <!-- "Most Popular" Badge -->
+      <div class="popular-badge">MOST POPULAR</div>
+
+      <div class="top-div">
+        <div>
+          <input type="radio" name="offer" id="two-unit">
+          <label for="two-unit" class="unit">2 Unit</label>
+          <span class="badge">20% Off</span>
+        </div>
+        <div>
+          <span class="unit">$18.00 USD</span>
+          <p class="strike-money"><s>$24.00 USD</s></p>
+        </div>
+      </div>
+
+      <!-- Size and color options for 2 units -->
+      <div id="two-unit-options" class="size-color-options">
+        <div class="select-div">
+          <p>#1</p>
+          <div class="inner-select">
+            <label for="size">Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="inner-select">
+            <label for="color">Color</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-div">
+          <p>#2</p>
+          <div class="inner-select">
+            <label for="size">Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="inner-select">
+            <label for="color">Color</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Unit Option -->
+    <div class="offer-box" onclick="toggleOptions('three-unit')">
+
+      <div class="top-div">
+        <div>
+          <input type="radio" name="offer" id="three-unit">
+          <label for="three-unit" class="unit">3 Unit</label>
+          <span class="badge">30% Off</span>
+        </div>
+        <div>
+          <span class="unit">$24.00 USD</span>
+          <p class="strike-money"><s>$24.00 USD</s></p>
+        </div>
+      </div>
+
+      <div id="three-unit-options" class="size-color-options">
+        <div class="select-div">
+          <p>#1</p>
+          <div class="inner-select">
+            <label for="size">Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="inner-select">
+            <label for="color">Color</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-div">
+          <p>#2</p>
+          <div class="inner-select">
+            <label for="size">Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="inner-select">
+            <label for="color">Color</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bottom-div">
+      <p class="free-delivery">Free Delivery</p>
+      <p class="total">Total: $18.00 USD</p>
+    </div>
+    <button class="add-to-cart">+ &nbsp;&nbsp; Add to Cart</button>
+    <p class="tag-btn">@ Powered by Pumper</p>
+  </div>
+  <script src="index.js"></script>  
+</body>
+
+</html>
