@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +20,14 @@
     <div class="offer-box" onclick="toggleOptions('one-unit')">
       <div class="top-div">
         <div>
+        <div class='inner-div'>
           <input type="radio" name="offer" id="one-unit" class="changeColor">
           <label for="one-unit" class="unit">1 Unit</label>
           <span class="badge">10% Off</span>
-          <p class="price">Standard Price</p>
         </div>
+          <p class="price">Standard Price</p>
+          </div>
+
         <div>
           <span class="unit">$10.00 USD</span>
           <p class="strike-money"><s>$24.00 USD</s></p>
@@ -72,13 +76,13 @@
     </div>
 
     <!-- 2 Unit Option -->
-  
+
     <div class="offer-box second_box" onclick="toggleOptions('two-unit')">
       <!-- "Most Popular" Badge -->
       <div class="popular-badge">MOST POPULAR</div>
 
       <div class="top-div">
-        <div>
+        <div class='inner-div'>
           <input type="radio" name="offer" id="two-unit">
           <label for="two-unit" class="unit">2 Unit</label>
           <span class="badge">20% Off</span>
@@ -136,7 +140,7 @@
     <div class="offer-box" onclick="toggleOptions('three-unit')">
 
       <div class="top-div">
-        <div>
+        <div class='inner-div'>
           <input type="radio" name="offer" id="three-unit">
           <label for="three-unit" class="unit">3 Unit</label>
           <span class="badge">30% Off</span>
@@ -196,7 +200,7 @@
     <button class="add-to-cart">+ &nbsp;&nbsp; Add to Cart</button>
     <p class="tag-btn">@ Powered by Pumper</p>
   </div>
-  <script src="index.js"></script>  
+  <script src="index.js"></script>
 </body>
 
 </html>

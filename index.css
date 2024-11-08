@@ -16,17 +16,19 @@ body {
   }
   
   .offer-box {
-    border: 1px solid #FF6B82;
+    border: 1px solid #C8C8C8;
     padding: 10px;
     margin: 20px 0;
     position: relative;
     cursor: pointer;
+    
   }
   
   .offer-box.selected {
     border: 2px solid #FF6B82;
     background-color: #fff0f5;
   }
+
   
   .text-with-line {
     display: flex;
@@ -180,7 +182,11 @@ body {
     margin: 5px;
     font-size: 13px;
   }
-  
+  .inner-div{
+display: flex;
+align-items: center;
+gap: 5px;
+  }
   @media (max-width: 600px) {
     .container {
       margin: 50px auto;
